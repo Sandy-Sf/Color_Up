@@ -1,0 +1,350 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald');
+</style>
+
+/*Import your fonts above this line*/
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #000000;
+  font-family: "oswald", sans-serif;
+  margin: 0;
+  padding-top: 92px;
+}
+
+nav {
+  background-color: #2d2d2d;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+nav img {
+  max-width: 80px;
+  padding-top: 10px;
+}
+
+nav a {
+  padding: 30px;
+}
+
+header {
+  color: #ffffff;
+  background-image: url('../images/4_Win_greyscale.png');
+  background-size: cover;
+  height: 900px;
+  text-align: center;
+  padding-top: 240px;
+}
+
+.header_container {
+   background-color: rgba(0, 0, 0, 0.6);
+   height: 275px;
+}
+
+header h2 {
+  color: #FFFFFF;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 52px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  word-spacing: 20px;
+  /*letter-spacing: 1px;*/
+
+}
+
+h2 {
+  font-size: 38px;
+  color: #18A75B;
+  margin-top: 100px;
+}
+
+.descriptive-headers h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.descriptive-headers h4 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 80px;
+  font-weight: normal;
+}
+
+#descriptive-overview h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#descriptive-overview h4 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 90px;
+  font-weight: normal;
+}
+/*.centered-green {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+}*/
+#no-top-margin {
+  margin-top: 0px;
+}
+#exclusive {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 24px;
+  text-align: center;
+}
+.product-overview {
+  text-align: left;
+  margin-top: 0;
+}
+
+#overview-image {
+  padding-top: 80px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+p, li {
+  font-family: "open sans", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.shop-now {
+  background-color: #18A75B;
+  color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop-now-button {
+  text-align: center;
+}
+
+.content-wrap {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.learn-win-flow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 60px;
+  text-align: center;
+}
+.learn-win-closing {
+  text-align: center;
+  margin-top: 0;
+}
+
+.learn-win-closing h3 {
+  margin-top: 0;
+}
+.reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 125px;
+  text-align: center;
+}
+#buy-now {
+  margin-bottom: 0px;
+  margin-top: 100px
+}
+
+#break-to-reviews {
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+.sliver-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:
+}
+
+.power-in-hands {
+  position: absolute;
+  width: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #ffffff;
+   font-family: "oswald", sans-serif;
+   font-size: 38px;
+   background-color: rgba(0, 0, 0, 0.5);
+}
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+}
+#space-before-hr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+hr {
+width: 75%;
+margin-top: 10px;
+}
+
+.pro-pack {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 50px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.pro-pack-copy {
+  text-align: left;
+}
+
+.pro-pack-copy h4,
+.pro-pack-copy h3,
+.pro-pack-copy p,
+.pro-pack-copy button {
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: left;
+}
+.pro-pack-copy p:first-of-type {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.pro-pack-copy p:nth-of-type(2) {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.pro-pack-copy h4:first-of-type {
+  color: grey;
+  text-decoration: line-through;
+  margin-bottom: 0px;
+}
+
+.pro-pack-copy h4:nth-of-type(2) {
+  margin-top: 0px;
+  position: relative;
+}
+
+.sale {
+  color: #c9463e;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.shop-now {
+  background-color: #18A75B;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: white;
+  border: 2px solid #18A75B;
+  color: #18A75B;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+
+}
+
+.img-circle {
+    border-radius: 3%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----------------------------------------
+mult-screen styling
+------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
+  }
+}
+
+  @media screen and (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+}
