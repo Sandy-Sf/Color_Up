@@ -26,7 +26,6 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
-
 }
 
 .hamburger {
@@ -49,12 +48,20 @@ nav {
   padding-right: 60px;
 }
 
+/*.close {
+  display: none;
+}*/
+
 .navigation-bar a:hover {
   text-decoration: underline;
 }
 
 .float-right-nav  {
   float: right;
+}
+
+.navigation-bar .close {
+  display: none;
 }
 
 .align-right {
@@ -65,7 +72,7 @@ nav {
 nav img {
   max-width: 90px;
   padding-top: 10px;
-  margin-left: 0px;
+  margin-left: 30px;
 }
 
 header {
@@ -73,7 +80,7 @@ header {
   background-image: url('../images/4_Win_greyscale.png');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 770px;
+  height: 800px;
   /*min-height: 70vh;*/
   text-align: center;
   padding-top: 240px;
@@ -223,6 +230,11 @@ ul {
   grid-gap: 125px;
   text-align: center;
 }
+
+.horizontal-reviews {
+  display: none;
+}
+
 #buy-now {
   margin-bottom: 0px;
   margin-top: 100px
@@ -427,34 +439,73 @@ mult-screen styling
 }
 
 @media screen and (max-width: 800px) {
-  nav {
+  /*nav {
     display: none;
+  }*/
+/*------------ TESTING THE HAMBURGER MENU
+____________*/
+
+
+.hamburger {
+  display: block;
+  font-size: 40px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+
+nav {
+  background-color: #2d2d2d;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(100%);
+}
+
+  .navigation-bar a {
+    display: block !important;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    color: white;
+    padding: 1rem;
+    /*vertical-align: top;
+    margin-right: 20px;
+    height: 80px;
+    line-height: 100px;
+    padding-right: 60px;*/
   }
-  .hamburger {
-    display: block;
-    font-size: 40px;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 22px;
+
+  .navigation-bar a:hover {
+    text-decoration: underline;
   }
+
+.close {
+  display: inline-block;
+  border: none;
+  text-align: right;
+}
+
+.close a {
+  border-bottom: none;
+  text-align: right;
+}
+
+.active {
+  transform: translateX(0);
+}
+
   header {
     color: #ffffff;
     background-image: url('../images/small_background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -20px;
+    margin-top: -40px;
     padding-top: 100px;
-    /*height: 300px;*/
-    /*height: 900px;*/
-    min-height: 60vh;
-    /*text-align: center;
-    padding-top: 240px;*/
+    height: 380px;
   }
-
-  /*header {
-    padding-top: 80px;
-    height: 300px;
-  }*/
 
   .header_container {
     background-color: rgba(0, 0, 0, 0.6);
@@ -469,14 +520,156 @@ mult-screen styling
     font-size: 25px;
     margin-top: 10px;
   }
+
+  .shop-now {
+    transition: all .3s ease;
+    background-color: #18A75B;
+    border: 2px solid #18A75B;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+  }
+
+  .add-to-cart {
+    background-color: white;
+    border: 2px solid #18A75B;
+    color: #18A75B;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    padding: 6px 11px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+  }
+
+  /*.shop-now {
+    background-color: #18A75B;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .shop-now-button {
+    text-align: center;
+  }*/
+
+
+.overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 100px;
+}
+
+#overview-image {
+  padding-top: 0;
+}
+
   .learn-win-flow {
     grid-template-columns: 1fr;
     grid-gap: 0px;
   }
+
+  .content-wrap {
+    margin-bottom: 0;
+  }
+  .learn-win-closing {
+    margin-top: 100px;
+  }
   #win-br {
     display: none;
   }
+  .reviews {
+    display: none;
 }
+
+.horizontal-reviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 70px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  padding-bottom: 100px
+}
+
+.horizontal-reviews p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.horizontal-reviews img {
+  position: relative;
+}
+
+.zak-review {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zak-review div {
+  text-align: right;
+}
+
+.zak-review div p {
+  text-align: right;
+}
+
+
+.nicole-review {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.nicole-review div {
+  text-align: left;
+}
+
+.jay-review {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.jay-review div {
+  text-align: right;
+}
+
+.jay-review div p {
+  text-align: right;
+}
+
+.pro-pack {
+  width: 90%;
+  margin: 0 40px;
+}
+
 
 @media screen and (max-width: 600px) {
   h1 {
